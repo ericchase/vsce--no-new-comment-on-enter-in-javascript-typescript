@@ -1,0 +1,42 @@
+{
+  "name": "custom-language-configuration--javascript-typescript",
+  "displayName": "custom-language-configuration--javascript-typescript",
+  "description": "Modifies the basic JavaScript and TypeScript language configurations provided by VSCode.",
+  "version": "0.0.1",
+  "publisher": "ericchase",
+  "license": "Apache-2.0",
+  "engines": { "vscode": "0.10.x" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "javascript",
+        "aliases": ["JavaScript", "javascript", "js"],
+        "extensions": [".js", ".es6", ".mjs", ".cjs", ".pac"],
+        "filenames": ["jakefile"],
+        "firstLine": "^#!.*\\bnode",
+        "mimetypes": ["text/javascript"],
+        "configuration": "./language-configuration--javascript.json"
+      },
+      {
+        "id": "javascriptreact",
+        "aliases": ["JavaScript JSX", "JavaScript React", "jsx"],
+        "extensions": [".jsx"],
+        "configuration": "./language-configuration--javascript.json"
+      },
+      {
+        "id": "typescript",
+        "aliases": ["TypeScript", "ts", "typescript"],
+        "extensions": [".ts", ".cts", ".mts"],
+        "configuration": "./language-configuration--typescript.json"
+      },
+      {
+        "id": "typescriptreact",
+        "aliases": ["TypeScript JSX", "TypeScript React", "tsx"],
+        "extensions": [".tsx"],
+        "configuration": "./language-configuration--typescript.json"
+      }
+    ]
+  },
+  "repository": {}
+}
