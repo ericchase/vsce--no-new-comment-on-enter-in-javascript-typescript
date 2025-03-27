@@ -36,7 +36,7 @@ Same deal with TypeScript.
 
 ### Demonstration
 
-![Demo](demo.mp4)
+<video controls src="./demo.mp4"></video>
 
 Please read the `README.md` file at https://github.com/ericchase-library/ts-library for more information.
 
