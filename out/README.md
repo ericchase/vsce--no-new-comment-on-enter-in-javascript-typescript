@@ -36,4 +36,4 @@ Same deal with TypeScript.
 
 ### Demonstration
 
-![Demo](demo.gif)
+> ![Demo](demo.gif)
