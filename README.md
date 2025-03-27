@@ -1,23 +1,44 @@
 ## About
 
-Modifies the basic JavaScript and TypeScript language configurations provided by the following VSCode extensions:
+Disables the creation of a new comment line when pressing the `Enter` key in the middle of an existing comment line in JavaScript and TypeScript files.
 
-javascript
+### JavaScript
 
-- `C:\Program Files\Microsoft VS Code\resources\app\extensions\javascript`
+> `C:\Program Files\Microsoft VS Code\resources\app\extensions\javascript\javascript-language-configuration.json`
 
-typescript-basics
+This line is responsible for creating the new comment line in JavaScript files.
 
-- `C:\Program Files\Microsoft VS Code\resources\app\extensions\typescript-basics`
+```json
+{
+  ...
+  "onEnterRules": [
+    ...
+    { "beforeText": { "pattern": "//.*" }, "afterText": { "pattern": "^(?!\\s*$).+" }, "action": { "indent": "none", "appendText": "// " } }
+  ]
+}
+```
 
-Relies on my TypeScript library and template:
+### TypeScript
 
-- https://github.com/ericchase-library/ts-library
-- https://github.com/ericchase-library/ts-templates-vscode-extension
+> `C:\Program Files\Microsoft VS Code\resources\app\extensions\typescript-basics\language-configuration.json`
 
-### Work In Progress
+Same deal with TypeScript.
 
-Uses v2 of my build tools.
+```json
+{
+  ...
+  "onEnterRules": [
+    ...
+    { "beforeText": { "pattern": "//.*" }, "afterText": { "pattern": "^(?!\\s*$).+" }, "action": { "indent": "none", "appendText": "// " } }
+  ]
+}
+```
+
+### Demonstration
+
+![Demo](demo.mp4)
+
+Please read the `README.md` file at https://github.com/ericchase-library/ts-library for more information.
 
 ## Developer Environment Setup
 
@@ -35,12 +56,20 @@ bun install
 
 **Build the project**
 
+For continuous building as you work:
+
+```
+bun run dev
+```
+
+For final builds:
+
 ```
 bun run build
 ```
 
-## Copyright & License
+**Run the Biome linter**
 
-> This code is truly free and open source, licensed under the Apache 2.0 License. If you make a copy, **I humbly ask** that you include the text from the `NOTICE` file somewhere in your project. **_You are not required to!_** You are also not required to include the original `LICENSE-APACHE` or `NOTICE` files, and I would prefer just a copy of the `NOTICE` file text or a link to this repository instead. You can use and modify this code however you like, including using a proprietary license for your changes. The only restriction I maintain is under clause 3 of the Apache 2.0 License regarding patents. If you find any potential license violations, please contact me so that I may resolve them.
-
-Full Text @ https://github.com/ericchase-library/ts-library?tab=readme-ov-file#copyright--license
+```
+bun run lint
+```

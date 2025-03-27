@@ -217,8 +217,8 @@ web_modules/
 *.exe
 
 # video files generally shouldn't be in repo
-*.mkv
-*.mp4
+# *.mkv
+# *.mp4
 
 # build folders
 /debug/

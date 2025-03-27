@@ -1,9 +1,39 @@
-Modifies the basic JavaScript and TypeScript language configurations provided by the following VSCode extensions:
+## About
 
-javascript
+Disables the creation of a new comment line when pressing the `Enter` key in the middle of an existing comment line in JavaScript and TypeScript files.
 
-- `C:\Program Files\Microsoft VS Code\resources\app\extensions\javascript`
+### JavaScript
 
-typescript-basics
+> `C:\Program Files\Microsoft VS Code\resources\app\extensions\javascript\javascript-language-configuration.json`
 
-- `C:\Program Files\Microsoft VS Code\resources\app\extensions\typescript-basics`
+This line is responsible for creating the new comment line in JavaScript files.
+
+```json
+{
+  ...
+  "onEnterRules": [
+    ...
+    { "beforeText": { "pattern": "//.*" }, "afterText": { "pattern": "^(?!\\s*$).+" }, "action": { "indent": "none", "appendText": "// " } }
+  ]
+}
+```
+
+### TypeScript
+
+> `C:\Program Files\Microsoft VS Code\resources\app\extensions\typescript-basics\language-configuration.json`
+
+Same deal with TypeScript.
+
+```json
+{
+  ...
+  "onEnterRules": [
+    ...
+    { "beforeText": { "pattern": "//.*" }, "afterText": { "pattern": "^(?!\\s*$).+" }, "action": { "indent": "none", "appendText": "// " } }
+  ]
+}
+```
+
+### Demonstration
+
+![Demo](demo.gif)
