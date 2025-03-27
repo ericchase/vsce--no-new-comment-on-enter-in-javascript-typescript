@@ -1,11 +1,13 @@
 {
   "name": "custom-language-configuration--javascript-typescript",
-  "displayName": "custom-language-configuration--javascript-typescript",
-  "description": "Modifies the basic JavaScript and TypeScript language configurations provided by VSCode.",
   "version": "0.0.1",
   "publisher": "ericchase",
+  "engines": {
+    "vscode": "0.10.x"
+  },
   "license": "Apache-2.0",
-  "engines": { "vscode": "0.10.x" },
+  "displayName": "custom-language-configuration--javascript-typescript",
+  "description": "Modifies the basic JavaScript and TypeScript language configurations provided by VSCode.",
   "categories": ["Programming Languages"],
   "contributes": {
     "languages": [
@@ -38,5 +40,8 @@
       }
     ]
   },
-  "repository": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericchase/VSCE--Language-Configuration.git"
+  }
 }
