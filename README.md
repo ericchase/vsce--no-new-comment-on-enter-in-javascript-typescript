@@ -36,7 +36,7 @@ Same deal with TypeScript.
 
 ### Demonstration
 
-![Demo](./demo.gif)
+> ![Demo](./demo.gif)
 
 Please read the `README.md` file at https://github.com/ericchase-library/ts-library for more information.
 
