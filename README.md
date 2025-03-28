@@ -38,7 +38,12 @@ Same deal with TypeScript.
 
 > ![Demo](./demo.gif)
 
-Please read the `README.md` file at https://github.com/ericchase-library/ts-library for more information.
+## TypeScript Library and Template Project
+
+For more information about my TypeScript library and template projects, please visit:
+
+- https://github.com/ericchase-library/ts-library
+- https://github.com/ericchase-library/ts-template
 
 ## Developer Environment Setup
 
