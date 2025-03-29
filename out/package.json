@@ -1,14 +1,14 @@
 {
   "name": "no-new-comment-on-enter-in-javascript-typescript",
-  "version": "0.0.2",
-  "publisher": "ericchase",
-  "engines": {
-    "vscode": "0.10.x"
-  },
-  "license": "Apache-2.0",
   "displayName": "No New Comment on Enter (JavaScript-TypeScript)",
+  "version": "0.0.2",
   "description": "Disables the creation of a new comment line when pressing the `Enter` key in the middle of an existing comment line in JavaScript and TypeScript files.",
   "categories": ["Programming Languages"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericchase/vsce--no-new-comment-on-enter-in-javascript-typescript.git"
+  },
+  "publisher": "ericchase",
   "contributes": {
     "languages": [
       {
@@ -40,8 +40,7 @@
       }
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ericchase/vsce--no-new-comment-on-enter-in-javascript-typescript.git"
+  "engines": {
+    "vscode": "0.10.x"
   }
 }
