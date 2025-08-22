@@ -1,7 +1,7 @@
 {
   "name": "no-new-comment-on-enter-in-javascript-typescript",
   "displayName": "No New Comment on Enter (JavaScript-TypeScript)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Disables the creation of a new comment line when pressing the `Enter` key in the middle of an existing comment line in JavaScript and TypeScript files.",
   "categories": [
     "Programming Languages"
