@@ -3,7 +3,9 @@
   "displayName": "No New Comment on Enter (JavaScript-TypeScript)",
   "version": "0.0.2",
   "description": "Disables the creation of a new comment line when pressing the `Enter` key in the middle of an existing comment line in JavaScript and TypeScript files.",
-  "categories": ["Programming Languages"],
+  "categories": [
+    "Programming Languages"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ericchase/vsce--no-new-comment-on-enter-in-javascript-typescript.git"
@@ -13,29 +15,63 @@
     "languages": [
       {
         "id": "javascript",
-        "aliases": ["JavaScript", "javascript", "js"],
-        "extensions": [".js", ".es6", ".mjs", ".cjs", ".pac"],
-        "filenames": ["jakefile"],
+        "aliases": [
+          "JavaScript",
+          "javascript",
+          "js"
+        ],
+        "extensions": [
+          ".js",
+          ".es6",
+          ".mjs",
+          ".cjs",
+          ".pac"
+        ],
+        "filenames": [
+          "jakefile"
+        ],
         "firstLine": "^#!.*\\bnode",
-        "mimetypes": ["text/javascript"],
+        "mimetypes": [
+          "text/javascript"
+        ],
         "configuration": "./javascript-language-configuration.json"
       },
       {
         "id": "javascriptreact",
-        "aliases": ["JavaScript JSX", "JavaScript React", "jsx"],
-        "extensions": [".jsx"],
+        "aliases": [
+          "JavaScript JSX",
+          "JavaScript React",
+          "jsx"
+        ],
+        "extensions": [
+          ".jsx"
+        ],
         "configuration": "./javascript-language-configuration.json"
       },
       {
         "id": "typescript",
-        "aliases": ["TypeScript", "ts", "typescript"],
-        "extensions": [".ts", ".cts", ".mts"],
+        "aliases": [
+          "TypeScript",
+          "ts",
+          "typescript"
+        ],
+        "extensions": [
+          ".ts",
+          ".cts",
+          ".mts"
+        ],
         "configuration": "./language-configuration.json"
       },
       {
         "id": "typescriptreact",
-        "aliases": ["TypeScript JSX", "TypeScript React", "tsx"],
-        "extensions": [".tsx"],
+        "aliases": [
+          "TypeScript JSX",
+          "TypeScript React",
+          "tsx"
+        ],
+        "extensions": [
+          ".tsx"
+        ],
         "configuration": "./language-configuration.json"
       }
     ]
